@@ -2,6 +2,12 @@
 
 A responsive, accessible academic website for GitHub Pages, plus a matching GitHub profile introduction. Plain HTML, CSS and a small optional script; no build step or package installation.
 
+## Custom domain and existing email
+
+The production domain is **hsiao.uk**. GitHub Pages is configured to serve this domain, and the root `CNAME` file must be retained on future deployments. `www.hsiao.uk` points directly to `michaelxiao-gis.github.io`.
+
+GoDaddy hosts the DNS. Only the website’s root A records and `www` CNAME were changed for this connection. Preserve the existing iCloud Mail MX records, SPF TXT record, Apple verification TXT record and `sig1._domainkey` DKIM CNAME. Also preserve the OpenAI verification TXT record, GoDaddy nameservers and `blog.hsiao.uk` record. Do not replace the DNS zone or use a website connection wizard that replaces existing records.
+
 ## Preview locally
 
 From this folder, run `python3 -m http.server 8000 --bind 127.0.0.1`, then open <http://127.0.0.1:8000>. Stop the server with Ctrl+C. You can also open `index.html` directly; citation copying may fall back to a download when opened as a file.
@@ -9,10 +15,10 @@ From this folder, run `python3 -m http.server 8000 --bind 127.0.0.1`, then open 
 ## Publish the website
 
 1. Create a **public** repository owned by `MichaelXiao-GIS` named **`michaelxiao-gis.github.io`**.
-2. Add `index.html`, `styles.css`, `script.js`, the `assets/` folder and the empty `.nojekyll` file to the repository’s `main` branch. This README and `.gitignore` may also be included. The `profile-readme/` folder belongs to the separate profile repository described below.
+2. Add `index.html`, `styles.css`, `script.js`, the `assets/` folder, the empty `.nojekyll` file and the `CNAME` file to the repository’s `main` branch. This README and `.gitignore` may also be included. The `profile-readme/` folder belongs to the separate profile repository described below.
 3. In the repository, choose **Settings → Pages → Build and deployment → Source → Deploy from a branch**.
 4. Choose **main** and **/(root)**, then **Save**.
-5. The intended address is <https://michaelxiao-gis.github.io/>. Check the Pages settings for the actual publication status; the address is not live until deployment succeeds.
+5. The custom address is <https://hsiao.uk/>. Check the Pages settings for DNS validation, certificate provisioning and HTTPS enforcement. The default GitHub Pages address redirects to the configured custom domain.
 
 Official instructions: [Create a GitHub Pages site](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site) · [Configure the publishing source](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
 
