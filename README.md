@@ -42,6 +42,6 @@ Checked on 22 October 2026:
 - [UCL publication list](https://profiles.ucl.ac.uk/96557-michael-xiao/publications)
 - [Publication record, authors, abstract and DOI](https://discovery.ucl.ac.uk/id/eprint/10224466/)
 - [Public GitHub profile](https://github.com/MichaelXiao-GIS)
-- [name-origin-rnn README](https://github.com/MichaelXiao-GIS/name-origin-rnn/blob/main/README.md)
+- [Geographic Data Service affiliation](https://geods.ac.uk/our-team/)
 
-The UK Statistics Authority position is shown as a past appointment, with the July–October 2026 dates from the UCL profile. No unlisted dates, supervisors, awards or research outputs have been inferred. Forked repositories are not presented as original research projects.
+The UK Statistics Authority position is shown as a past appointment, with the July–October 2026 dates from the UCL profile. No unlisted dates, supervisors, awards or research outputs have been inferred. The repository showcase has been removed at the owner’s request. The affiliation strip identifies Social and Geographic Data Science at UCL and links to the Geographic Data Service (GeoDS).
